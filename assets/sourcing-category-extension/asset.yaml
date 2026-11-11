@@ -1,0 +1,17 @@
+apiVersion: asset.sap/v1
+kind: Asset
+metadata:
+  name: sourcing-category-extension
+  description: Extends the Sourcing Negotiation Agent with a Sourcing Category Detection block at the start of every response and an AI-generated disclaimer with timestamp at the end.
+  version: 1.0.0
+type: agent-extension
+sourceRoot: .
+provides:
+  extensions:
+    - descriptorFile: extension.yaml
+      name: sourcing-category-extension
+requires:
+  - name: sourcing-negotiation-agent
+    kind: agent
+    version: 1.0.0
+    ordId: sap.agtnego:agent:sourcing-negotiation-agent:v1

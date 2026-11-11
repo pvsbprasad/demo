@@ -1,0 +1,10 @@
+apiVersion: solution.sap/v1
+kind: Solution
+
+metadata:
+  name: sourcing-category-extension-b82be
+  version: 1.0.0
+  description: Extends the Sourcing Negotiation Agent with procurement category detection and AI disclaimer instructions appended to every response.
+
+assets:
+  - ref: ./assets/sourcing-category-extension/asset.yaml
